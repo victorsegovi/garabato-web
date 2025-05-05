@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
 interface ScrollButtonProps{

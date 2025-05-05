@@ -2,11 +2,9 @@
 
 import Header from "../components/Header"
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { FaLocationDot } from "react-icons/fa6";
 
 export default function Galeria() {
-    const router = useRouter()
 
     const [isShown, setIsShown] = useState(false)
 
