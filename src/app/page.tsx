@@ -142,6 +142,28 @@ export default function Home() {
       <section id="documentary" style={{ backgroundImage: "url(bg-logo.jpg)" }} className="bg-center bg-no-repeat bg-cover m-w-screen min-h-screen secondary-color flex flex-col items-center justify-center p-10 gap-10 text-justify">
         <h2 className="text-3xl">Reportajes</h2>
         <div className="w-full max-w-[500px] flex flex-col gap-5">
+          <p>
+            Esta comunidad cuenta con aproximadamente 300 habitantes quienes se caracterizan por ser personas valientes, trabajadoras, resilientes, pero sobre todo, nobles y generosas. Su rutina diaria comienza desde muy temprano al realizar labores agrícolas y ganaderas para su propia subsistencia, como ordeñar y sembrar. A pesar de que en otras zonas rurales, los roles de las mujeres y hombres pueden estar bastante divididos, en Garabato no, puesto que la mujer garabateña también se integra en todo lo que refiere a las tareas del campo, esto las hace más independientes.<br></br><br></br>
+
+            Según cifras de la ONU, las mujeres en zonas rurales conforman un 43 % de la mano de obra agrícola. La vicepresidente del Foro Rural de Venezuela, Maribel Guédez, señaló en una entrevista reciente que la mujer venezolana representa el 48 % de la mano de obra en el reducido campo productivo y que la sociedad venezolana no está consciente de la importancia de este dato cuantitativo de impacto cualitativo.<br></br><br></br>
+
+            Las arduas labores que se realizan en Garabato como el ordeño, preparación de queso, variedad de cultivos como maíz, topocho y yuca, no solo sustenta los ingresos económicos de sus pobladores, sino también contribuyen a la economía venezolana. Según la Organización de las Naciones Unidas para la Alimentación y la Agricultura las zonas rurales producen el 70% de los alimentos básicos consumidos en Venezuela (maíz, arroz, plátanos, raíces, carne y leche).<br></br><br></br>
+
+            Sin embargo, pese a la importancia de su labor para el consumo nacional muchos de los habitantes del asentamiento campesino en estudio, expresaron que sus ingresos económicos varían entre los 70 y 80 dólares mensuales. En el ámbito educativo, los profesionales que día a día hacen hasta lo imposible para educar a las nuevas generaciones, aseguraron que su sueldo mensual no supera los 200 bolívares.<br></br><br></br>
+
+            Robert Parga, presidente del Colegio de Economistas del Estado Carabobo, señaló que la mayoría de los venezolanos tanto en las zonas urbanas como en las rurales están en situación de pobreza, aunque no sea extrema.
+
+          </p>
+          <div className={"relative aspect-video"}>
+            <iframe
+              loading="lazy" title="Gumlet video player"
+              src="https://play.gumlet.io/embed/6818e69a9bfb1a1815af36b6"
+              className={"border-0 absolute top-0 left-0 h-full w-full"}
+              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
+            </iframe>
+          </div>
+        </div>
+        <div className="w-full max-w-[500px] flex flex-col gap-5">
           <p>Uno de los elementos que afectan las zonas rurales del país es el desmejoramiento o en algunos casos, la inexistencia de servicios públicos. En el caso de Garabato, no poseen ningún tipo de servicios públicos, es por eso que, deben realizar grandes esfuerzos para poder obtener por sus medios todos estos recursos que son de suma importancia para el ser humano.<br></br><br></br> Bajo un sol inclemente y altas temperaturas, semanalmente deben buscar leña para poder cocinar y a través de un proceso de bombeo manual extraer agua de los suelos para almacenarla.
             <br></br><br></br>
             Asimismo, no cuentan con espacios adecuados para realizar su aseo personal, y en caso de alguna emergencia médica no disponen de centros asistenciales cercanos por lo que tienen que viajar dos horas hasta el ambulatorio más próximo a la población ubicado en Guanarito, Estado Portuguesa.
@@ -157,7 +179,22 @@ export default function Home() {
         </div>
         <div className="w-full max-w-[500px] flex flex-col gap-5">
           <p>
-          Garabato no solo es un asentamiento campesino; esta comunidad refleja la lucha y la esperanza en medio de las dificultades. Cada amanecer trae consigo el eco del arduo trabajo de sus habitantes, quienes, a pesar de las limitaciones, continúan apostando a este lugar. La vida en Garabato es un testimonio del espíritu humano que se niega a rendirse, donde la solidaridad y el esfuerzo colectivo son el motor que impulsa a esta comunidad hacia un futuro mejor. En un mundo que ignora las voces de las comunidades rurales, Garabato recuerda que detrás de cada cifra hay historias de valentía y dignidad que merecen ser escuchadas y valoradas.
+            Por otro lado, el sistema educativo en Garabato enfrenta múltiples debilidades. Los niños deben recorrer a diario un trayecto de aproximadamente dos horas para acudir a sus actividades escolares, dado que solo existen dos escuelas y  se encuentran distantes de sus viviendas. La infraestructura física de estos centros educativos están en mal estado y el personal docente resulta insuficiente por lo que el pensum de estudio no se cumple en su totalidad.<br></br><br></br>
+
+            Según un informe de la Encuesta de Condiciones de Vida, aproximadamente el 30% de los niños en zonas rurales de Venezuela no asiste a la escuela de manera regular por deserción escolar o la asistencia es intermitente por la falta de transporte, trabajo juvenil, entre otras razones.
+          </p>
+          <div className="relative aspect-video">
+            <iframe
+              loading="lazy" title="Gumlet video player"
+              src="https://play.gumlet.io/embed/6818d2619bfb1a1815aeac0c"
+              className="border-0 absolute; top-0 left-0 h-full w-full"
+              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
+            </iframe>
+          </div>
+        </div>
+        <div className="w-full max-w-[500px] flex flex-col gap-5">
+          <p>
+            Garabato no solo es un asentamiento campesino; esta comunidad refleja la lucha y la esperanza en medio de las dificultades. Cada amanecer trae consigo el eco del arduo trabajo de sus habitantes, quienes, a pesar de las limitaciones, continúan apostando a este lugar. La vida en Garabato es un testimonio del espíritu humano que se niega a rendirse, donde la solidaridad y el esfuerzo colectivo son el motor que impulsa a esta comunidad hacia un futuro mejor. En un mundo que ignora las voces de las comunidades rurales, Garabato recuerda que detrás de cada cifra hay historias de valentía y dignidad que merecen ser escuchadas y valoradas.
           </p>
           <div className={"relative aspect-video"}>
             <iframe
