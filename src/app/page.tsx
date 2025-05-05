@@ -59,7 +59,7 @@ export default function Home() {
       <Header isShown={isShown} handleClick={handleClick} isHome={true}></Header>
       <section style={{ backgroundImage: "url(garabato-paisaje.jpg)" }} className="bg-cover bg-no-repeat bg-center h-screen m-w-screen relative flex flex-col p-10 items-center justify-center gap-4" id="hero-section">
         <div className="w-full h-full bg-linear-180 from-[#8E9B6D] to-[#1F3F27] absolute top-0 left-0 opacity-60"></div>
-        <h1 className="secondary-color z-10 text-center mt-24">Garabato: Historias Olvidadas</h1>
+        <h1 className="secondary-color z-10 text-center mt-24">Garabato</h1>
         <p className="secondary-color z-10 text-center lg:w-1/2">Para el ser humano casi siempre es interesante
           conocer historias nuevas y más si se trata de temas
           que no se exponen con frecuencia.<br></br><br></br>
@@ -69,7 +69,6 @@ export default function Home() {
           curiosidad en el espectador.</p>
       </section>
       <section id="documentary" style={{ backgroundImage: "url(bg-logo.jpg)" }} className="bg-center bg-no-repeat bg-cover m-w-screen min-h-screen secondary-color flex flex-col items-center justify-center p-10 gap-10 text-justify">
-        <h2 className="text-3xl">Reportajes</h2>
         <div className="w-full max-w-[500px] flex flex-col gap-5">
           <p>Las comunidades rurales enfrentan desafíos significativos que afectan su desarrollo y bienestar. A menudo, estas dificultades se ven acentuadas por la falta de acceso a servicios básicos y recursos, lo que limita su capacidad para prosperar. La pobreza, la precariedad, la marginalidad económica y social continúan, hoy por hoy, prevaleciendo en muchas de las zonas rurales de los países de la región, entre ellos, Venezuela.<br></br><br></br>
 

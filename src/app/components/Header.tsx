@@ -19,7 +19,7 @@ export default function Header({ handleClick, isShown, isHome }: HeaderProps) {
     return (
         <header className={`${isHome ? "fixed" : "sticky"} top-0 z-50 w-full`}>
             <div className=" rounded-b-4xl tertiary-color-bg w-full flex p-10 primary-color items-center justify-between">
-                <img className="cursor-pointer" src="/garabato-logo.svg" alt="Garabato Logo" onClick={() => {
+                <img className="cursor-pointer w-1/3" src="/garabato-logo.svg" alt="Garabato Logo" onClick={() => {
                     if (isHome) {
                         window.scroll(0, 0)
                     } else {
