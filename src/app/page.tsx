@@ -33,7 +33,7 @@ export default function Home() {
     const nextIndex = (currentIndex + 1) % scrollStops.length;
     const nextStop = scrollStops[nextIndex];
     setScrollStop(nextStop);
-  
+
     const section = document.getElementById(nextStop);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -143,16 +143,43 @@ export default function Home() {
             propensos a caer en la pobreza en tiempos de crisis.</p>
         </article>
       </section>
-      <section id="documentary" style={{ backgroundImage: "url(bg-logo.jpg)" }} className="bg-center bg-no-repeat bg-cover m-w-screen h-screen secondary-color text-3xl flex flex-col items-center justify-center">
-        <h2>Reportajes</h2>
+      <section id="documentary" style={{ backgroundImage: "url(bg-logo.jpg)" }} className="bg-center bg-no-repeat bg-cover m-w-screen min-h-screen secondary-color flex flex-col items-center justify-center p-10 gap-10">
+        <h2 className="text-3xl">Reportajes</h2>
+        <div className="w-full max-w-[500px] flex flex-col gap-5">
+          <p>Uno de los elementos que afectan las zonas rurales del país es el desmejoramiento o en algunos casos, la inexistencia de servicios públicos. En el caso de Garabato, no poseen ningún tipo de servicios públicos, es por eso que, deben realizar grandes esfuerzos para poder obtener por sus medios todos estos recursos que son de suma importancia para el ser humano.<br></br><br></br> Bajo un sol inclemente y altas temperaturas, semanalmente deben buscar leña para poder cocinar y a través de un proceso de bombeo manual extraer agua de los suelos para almacenarla.
+            <br></br><br></br>
+            Asimismo, no cuentan con espacios adecuados para realizar su aseo personal, y en caso de alguna emergencia médica no disponen de centros asistenciales cercanos por lo que tienen que viajar dos horas hasta el ambulatorio más próximo a la población ubicado en Guanarito, Estado Portuguesa.
+          </p>
+          <div className={"relative aspect-video"}>
+            <iframe
+              loading="lazy" title="Gumlet video player"
+              src="https://play.gumlet.io/embed/6817f83de63aea8598632ae3"
+              className={"border-0 absolute top-0 left-0 h-full w-full"}
+              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
+            </iframe>
+          </div>
+        </div>
+        <div className="w-full max-w-[500px] flex flex-col gap-5">
+          <p>
+          A pesar de las adversidades, los habitantes de esta comunidad se levantan cada día con la determinación de salir adelante. Su lucha constante por mejorar sus vidas, es un recordatorio de que el esfuerzo y la solidaridad pueden transformar cualquier desafío en una oportunidad para el futuro.
+          </p>
+          <div className={"relative aspect-video"}>
+      <iframe 
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6817f83dc4342f3361622e39"
+            className={"border-0 absolute top-0 left-0 h-full w-full"}
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
+          </iframe>
+    </div>
+        </div>
       </section>
       <section id="others" className="w-full flex flex-wrap sticky z-10">
         <article className="flex flex-col gap-5 lg:items-start items-center p-10 lg:p-16 lg:justify-start justify-center h-[50vh] lg:w-1/2 w-full secondary-color-bg lg:rounded-tr-[64px]">
           <h2 className="active-color lg:text-4xl text-xl">Visita nuestras redes sociales</h2>
           <div className="flex flex-col gap-5 items-start justify-center md:flex-row md:items-center text-xl">
-          <a href="https://www.instagram.com/garabatoficial.ve?igsh=MXV2YWY0ZDFyeGE5ag%3D%3D&utm_source=qr" target="_blank" className="flex items-center justify-center gap-1"><FaInstagram /> Instagram</a>
-          <a href="https://www.tiktok.com/@garabato.ve?_t=ZM-8w5Tti1ZHOw&_r=1" target="_blank" className="flex items-center justify-center gap-1"><FaTiktok /> Tiktok</a>
-          <a href="https://youtu.be/sbjfPB44N4o?feature=shared" target="_blank" className="flex items-center justify-center gap-1"><FaYoutube /> Youtube</a>
+            <a href="https://www.instagram.com/garabatoficial.ve?igsh=MXV2YWY0ZDFyeGE5ag%3D%3D&utm_source=qr" target="_blank" className="flex items-center justify-center gap-1"><FaInstagram /> Instagram</a>
+            <a href="https://www.tiktok.com/@garabato.ve?_t=ZM-8w5Tti1ZHOw&_r=1" target="_blank" className="flex items-center justify-center gap-1"><FaTiktok /> Tiktok</a>
+            <a href="https://youtu.be/sbjfPB44N4o?feature=shared" target="_blank" className="flex items-center justify-center gap-1"><FaYoutube /> Youtube</a>
           </div>
         </article>
         <article className="flex flex-col gap-5 lg:items-start items-center p-10 lg:p-16 lg:justify-start justify-center h-[50vh] lg:w-1/2 w-full active-color-bg lg:rounded-tl-[64px]">
