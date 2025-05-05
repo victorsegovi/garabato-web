@@ -57,9 +57,9 @@ export default function Home() {
   return (
     <div>
       <Header isShown={isShown} handleClick={handleClick} isHome={true}></Header>
-      <section style={{ backgroundImage: "url(garabato-paisaje.jpg)" }} className="bg-cover bg-no-repeat bg-center h-[70vh] m-w-screen relative flex flex-col px-10 py-20 items-center justify-end gap-4" id="hero-section">
+      <section style={{ backgroundImage: "url(garabato-paisaje.jpg)" }} className="bg-cover bg-no-repeat bg-center h-[80vh] m-w-screen relative flex flex-col px-10 py-15 items-center justify-end gap-4" id="hero-section">
         <div className="w-full h-full bg-linear-180 from-[#8E9B6D] to-[#1F3F27] absolute top-0 left-0 opacity-60"></div>
-        <p className="secondary-color z-10 text-center lg:w-1/2">Para el ser humano casi siempre es interesante
+        <p className="secondary-color z-10 text-center lg:w-1/2 lg:text-xl font-bold">Para el ser humano casi siempre es interesante
           conocer historias nuevas y más si se trata de temas
           que no se exponen con frecuencia.<br></br><br></br>
           Descubrir localidades poco conocidas y adentrarse
@@ -147,7 +147,7 @@ export default function Home() {
                 <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
                     <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
                         <div className="flex items-center gap-12">
-                            <h1 className="text-2xl font-bold lg:text-3xl">Galería</h1>
+                            <h1 className="text-2xl font-bold lg:text-3xl">Garabato en Imágenes</h1>
                         </div>
                     </div>
 
@@ -205,7 +205,7 @@ export default function Home() {
                                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                             </div>
 
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Grifo</span>
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Aljibe</span>
                         </a>
 
                         <a href="#"
@@ -216,7 +216,7 @@ export default function Home() {
                                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                             </div>
 
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Grifo</span>
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Bomba de Agua</span>
                         </a>
 
                         <a href="#"
