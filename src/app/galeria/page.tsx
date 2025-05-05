@@ -186,7 +186,7 @@ export default function Galeria() {
                 </div>
             </div>
             <footer className="primary-color-bg rounded-t-[40px] tertiary-color items-center justify-center flex h-[50vh] lg:h-[35vh] -mt-10 sticky z-10 flex-col gap-10 lg:rounded-t-[64px] lg:-mt-16">
-                <a className="flex items-center gap-1 font-bold underline"><FaLocationDot></FaLocationDot> Ubicación</a>
+                <a className="flex items-center gap-1 font-bold underline" href="https://www.google.com/maps/place/garabato+cojedes/data=!4m2!3m1!1s0x8e7eb07f33b2cfd1:0xe7959670dacfb8f?sa=X&ved=1t:242&ictx=111" target="_blank"><FaLocationDot></FaLocationDot> Ubicación</a>
                 <p className="capitalize font-light text-sm">Garabato todos los derechos reservados ©</p>
             </footer>
         </div>

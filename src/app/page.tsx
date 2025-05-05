@@ -68,7 +68,7 @@ export default function Home() {
           tradiciones y desafíos es algo que despierta la
           curiosidad en el espectador.</p>
       </section>
-      <section id="description" className="flex flex-col gap-10 p-10">
+      <section id="description" className="flex flex-col gap-10 p-10 text-justify">
         <article className="flex flex-col gap-5">
           <h2 className="text-4xl">¿Qué es Garabato?</h2>
           <p>Garabato, es un asentamiento campesino ubicado en
@@ -91,11 +91,7 @@ export default function Home() {
             numerosas riquezas naturales como su flora y fauna.
 
             Cada habitante se caracteriza por su esfuerzo y aplomo
-            de salir adelante y esto se resaltará dentro de la
-            producción, desde levantarse muy temprano para
-            buscar los alimentos del día, cultivar tabaco en el
-            verano para sobrevivir en el invierno, la cría de animales,
-            entre otras actividades que realizan para su
+            de salir adelante, desde levantarse muy temprano para buscar los alimentos del día, supervisar sus cultivos, la cría de animales, entre otras actividades que realizan para su
             subsistencia; todo ello sin perder la esperanza por
             llegar a alcanzar un futuro donde sus sueños y
             aspiraciones logren verse materializados.</p>
@@ -112,7 +108,7 @@ export default function Home() {
             fue del 50,5%. La mitad de los hogares no percibe
             ingresos suficientes para cubrir la Canasta Alimentaria,
             lo que los pone en una situación de pobreza extrema,
-            según los resultados de ENCOVI.
+            según los resultados de ENCOVI.<br></br><br></br>
 
             El Instituto Nacional de Estadística, calculó que hay
             286.000 hogares pobres en las zonas rurales, de los
@@ -123,7 +119,7 @@ export default function Home() {
             sin tierra, con jefaturas de hogar a cargo de mujeres.
             Se trata en todos los casos de grupos meta a los que
             van dirigidos los proyectos del Fondo Internacional de
-            Desarrollo Agrícola (FIDA).
+            Desarrollo Agrícola (FIDA).<br></br><br></br>
 
             Es importante destacar que la pobreza en Venezuela
             presenta un marcado carácter rural. Más del 50% de la
@@ -134,7 +130,7 @@ export default function Home() {
             actividad económica altamente vulnerable a factores
             externos como las fluctuaciones de los precios de los
             productos agrícolas y la falta de acceso a tecnologías
-            modernas.
+            modernas.<br></br><br></br>
 
             Garabato, al ser una comunidad rural, comparte estas
             características. La ausencia de otras fuentes de ingreso
@@ -143,7 +139,7 @@ export default function Home() {
             propensos a caer en la pobreza en tiempos de crisis.</p>
         </article>
       </section>
-      <section id="documentary" style={{ backgroundImage: "url(bg-logo.jpg)" }} className="bg-center bg-no-repeat bg-cover m-w-screen min-h-screen secondary-color flex flex-col items-center justify-center p-10 gap-10">
+      <section id="documentary" style={{ backgroundImage: "url(bg-logo.jpg)" }} className="bg-center bg-no-repeat bg-cover m-w-screen min-h-screen secondary-color flex flex-col items-center justify-center p-10 gap-10 text-justify">
         <h2 className="text-3xl">Reportajes</h2>
         <div className="w-full max-w-[500px] flex flex-col gap-5">
           <p>Uno de los elementos que afectan las zonas rurales del país es el desmejoramiento o en algunos casos, la inexistencia de servicios públicos. En el caso de Garabato, no poseen ningún tipo de servicios públicos, es por eso que, deben realizar grandes esfuerzos para poder obtener por sus medios todos estos recursos que son de suma importancia para el ser humano.<br></br><br></br> Bajo un sol inclemente y altas temperaturas, semanalmente deben buscar leña para poder cocinar y a través de un proceso de bombeo manual extraer agua de los suelos para almacenarla.
@@ -161,16 +157,16 @@ export default function Home() {
         </div>
         <div className="w-full max-w-[500px] flex flex-col gap-5">
           <p>
-          A pesar de las adversidades, los habitantes de esta comunidad se levantan cada día con la determinación de salir adelante. Su lucha constante por mejorar sus vidas, es un recordatorio de que el esfuerzo y la solidaridad pueden transformar cualquier desafío en una oportunidad para el futuro.
+          Garabato no solo es un asentamiento campesino; esta comunidad refleja la lucha y la esperanza en medio de las dificultades. Cada amanecer trae consigo el eco del arduo trabajo de sus habitantes, quienes, a pesar de las limitaciones, continúan apostando a este lugar. La vida en Garabato es un testimonio del espíritu humano que se niega a rendirse, donde la solidaridad y el esfuerzo colectivo son el motor que impulsa a esta comunidad hacia un futuro mejor. En un mundo que ignora las voces de las comunidades rurales, Garabato recuerda que detrás de cada cifra hay historias de valentía y dignidad que merecen ser escuchadas y valoradas.
           </p>
           <div className={"relative aspect-video"}>
-      <iframe 
-            loading="lazy" title="Gumlet video player"
-            src="https://play.gumlet.io/embed/6817f83dc4342f3361622e39"
-            className={"border-0 absolute top-0 left-0 h-full w-full"}
-          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
-          </iframe>
-    </div>
+            <iframe
+              loading="lazy" title="Gumlet video player"
+              src="https://play.gumlet.io/embed/6817f83dc4342f3361622e39"
+              className={"border-0 absolute top-0 left-0 h-full w-full"}
+              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
+            </iframe>
+          </div>
         </div>
       </section>
       <section id="others" className="w-full flex flex-wrap sticky z-10">
@@ -188,7 +184,7 @@ export default function Home() {
         </article>
       </section>
       <footer className="primary-color-bg rounded-t-[40px] tertiary-color items-center justify-center flex h-[50vh] lg:h-[35vh] -mt-10 sticky z-10 flex-col gap-10 lg:rounded-t-[64px] lg:-mt-16">
-        <a className="flex items-center gap-1 font-bold underline"><FaLocationDot></FaLocationDot> Ubicación</a>
+        <a className="flex items-center gap-1 font-bold underline" href="https://www.google.com/maps/place/garabato+cojedes/data=!4m2!3m1!1s0x8e7eb07f33b2cfd1:0xe7959670dacfb8f?sa=X&ved=1t:242&ictx=111" target="_blank"><FaLocationDot></FaLocationDot> Ubicación</a>
         <p className="capitalize font-light text-sm">Garabato todos los derechos reservados ©</p>
       </footer>
       <ScrollButton handleScroll={handleScroll}></ScrollButton>
