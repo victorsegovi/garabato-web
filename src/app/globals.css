@@ -1,26 +1,74 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --background: #fafafa;
+  --foreground: #1F3F27;
 
-@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-titles: var(--font-inria-serif);
+  --font-text: var(--font-heebo);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-text);
+}
+
+h1{
+  font-size: clamp(2.5rem, 2vw, 6rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-titles);
+  font-weight: bold;
+}
+
+p, a, button, ul, li, ol {
+  font-family: var(--font-text);
+}
+
+
+.secondary-color{
+  color: #FAFAFA;
+}
+
+.tertiary-color {
+  color: #D5C7AA;
+}
+
+.primary-color-bg {
+  background-color: #1F3F27;
+}
+.primary-color {
+  background-color: #1F3F27;
+}
+
+.secondary-color-bg{
+  background-color: #8E9B6D
+}
+
+.tertiary-color-bg {
+  background-color: #D5C7AA;
+}
+
+.active-color-bg{
+  background-color: #18301E
+}
+
+.active-color{
+  color: #18301E;
+}
+
+html::-webkit-scrollbar{
+  width: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+h2{
+  font-size: 2.25rem
 }

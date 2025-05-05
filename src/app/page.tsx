@@ -1,103 +1,170 @@
-import Image from "next/image";
+"use client"
+import Header from "./components/Header";
+import ScrollButton from "./components/ScrollButton";
+import { useState, useEffect } from "react";
+import Button from "./components/Button";
+import { useRouter } from "next/navigation";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+  const [scrollStop, setScrollStop] = useState('hero-section')
+
+  const scrollStops = [
+    "hero-section",
+    "description",
+    "documentary",
+    "others"
+  ]
+
+  const router = useRouter()
+
+  const [isShown, setIsShown] = useState(false)
+
+  function handleClick() {
+    setIsShown(!isShown)
+  }
+
+  function handleScroll() {
+    const currentIndex = scrollStops.indexOf(scrollStop);
+    const nextIndex = (currentIndex + 1) % scrollStops.length;
+    const nextStop = scrollStops[nextIndex];
+    setScrollStop(nextStop);
+  
+    const section = document.getElementById(nextStop);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  useEffect(() => {
+    // When the mobile menu is open, disable scrolling on the body
+    if (isShown) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = ''; // Or 'auto' to restore default
+    }
+
+    // Cleanup function to reset overflow when the component unmounts
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isShown]);
+
+  return (
+    <div>
+      <Header isShown={isShown} handleClick={handleClick} isHome={true}></Header>
+      <section style={{ backgroundImage: "url(garabato-paisaje.jpg)" }} className="bg-cover bg-no-repeat bg-center h-screen m-w-screen relative flex flex-col p-10 items-center justify-center gap-4" id="hero-section">
+        <div className="w-full h-full bg-linear-180 from-[#8E9B6D] to-[#1F3F27] absolute top-0 left-0 opacity-60"></div>
+        <h1 className="secondary-color z-10 text-center mt-24">Garabato: Historias Olvidadas</h1>
+        <p className="secondary-color z-10 text-center lg:w-1/2">Para el ser humano casi siempre es interesante
+          conocer historias nuevas y más si se trata de temas
+          que no se exponen con frecuencia.<br></br><br></br>
+          Descubrir localidades poco conocidas y adentrarse
+          en su cultura, población, idiosincrasia, costumbres,
+          tradiciones y desafíos es algo que despierta la
+          curiosidad en el espectador.</p>
+      </section>
+      <section id="description" className="flex flex-col gap-10 p-10">
+        <article className="flex flex-col gap-5">
+          <h2 className="text-4xl">¿Qué es Garabato?</h2>
+          <p>Garabato, es un asentamiento campesino ubicado en
+            el estado Cojedes con aproximadamente 300
+            habitantes, que, a pesar de sus carencias
+            tecnológicas, asistenciales, culturales, educativas, así
+            como de medios de comunicación que permitan
+            conocer de sus aspectos característicos como la falta
+            de alimentos o desarrollo y habilidades de
+            sobrevivencia a temprana edad, subsisten en un
+            precario espacio geográfico, bajo el cobijo de la
+            solidaridad, el respeto, la tolerancia, la bondad, el
+            amor y la equidad entre sus habitantes.</p>
+        </article>
+        <article className="flex flex-col gap-5">
+          <h2>Ejemplo de resiliencia</h2>
+          <p>Es un lugar único que cuenta con personas nobles que,
+            aunque viven con distintas carencias, tienden su mano
+            amiga a quien más lo necesita, además de poseer
+            numerosas riquezas naturales como su flora y fauna.
+
+            Cada habitante se caracteriza por su esfuerzo y aplomo
+            de salir adelante y esto se resaltará dentro de la
+            producción, desde levantarse muy temprano para
+            buscar los alimentos del día, cultivar tabaco en el
+            verano para sobrevivir en el invierno, la cría de animales,
+            entre otras actividades que realizan para su
+            subsistencia; todo ello sin perder la esperanza por
+            llegar a alcanzar un futuro donde sus sueños y
+            aspiraciones logren verse materializados.</p>
+        </article>
+        <article className="flex flex-col gap-5">
+          <h2>El problema</h2>
+          <p>La Encuesta de Condiciones de Vida (ENCOVI) es un
+            estudio que arrojó un resultado en el que el 51,9% de la
+            población venezolana estaba en condiciones de
+            pobreza el año pasado, una cifra ligeramente mayor en
+            comparación con 2022, cuando la pobreza
+            multidimensional, que incluye el nivel de ingresos y
+            acceso a servicios públicos como educación y salud,
+            fue del 50,5%. La mitad de los hogares no percibe
+            ingresos suficientes para cubrir la Canasta Alimentaria,
+            lo que los pone en una situación de pobreza extrema,
+            según los resultados de ENCOVI.
+
+            El Instituto Nacional de Estadística, calculó que hay
+            286.000 hogares pobres en las zonas rurales, de los
+            cuales 172.000 están en situación de pobreza extrema.
+            Los segmentos más pobres de la población rural
+            comprenden comunidades indígenas y de origen
+            africano, habitantes de territorios semiáridos y familias
+            sin tierra, con jefaturas de hogar a cargo de mujeres.
+            Se trata en todos los casos de grupos meta a los que
+            van dirigidos los proyectos del Fondo Internacional de
+            Desarrollo Agrícola (FIDA).
+
+            Es importante destacar que la pobreza en Venezuela
+            presenta un marcado carácter rural. Más del 50% de la
+            población rural vive en condiciones de pobreza, en
+            comparación con el 40% de las zonas urbanas. Esta
+            disparidad se explica en gran medida por la
+            dependencia de la agricultura de subsistencia, una
+            actividad económica altamente vulnerable a factores
+            externos como las fluctuaciones de los precios de los
+            productos agrícolas y la falta de acceso a tecnologías
+            modernas.
+
+            Garabato, al ser una comunidad rural, comparte estas
+            características. La ausencia de otras fuentes de ingreso
+            más allá de la agricultura limita las oportunidades de
+            desarrollo para sus habitantes y los hace más
+            propensos a caer en la pobreza en tiempos de crisis.</p>
+        </article>
+      </section>
+      <section id="documentary" style={{ backgroundImage: "url(bg-logo.jpg)" }} className="bg-center bg-no-repeat bg-cover m-w-screen h-screen secondary-color text-3xl flex flex-col items-center justify-center">
+        <h2>Reportajes</h2>
+      </section>
+      <section id="others" className="w-full flex flex-wrap sticky z-10">
+        <article className="flex flex-col gap-5 lg:items-start items-center p-10 lg:p-16 lg:justify-start justify-center h-[50vh] lg:w-1/2 w-full secondary-color-bg lg:rounded-tr-[64px]">
+          <h2 className="active-color lg:text-4xl text-xl">Visita nuestras redes sociales</h2>
+          <div className="flex flex-col gap-5 items-start justify-center md:flex-row md:items-center text-xl">
+          <a href="https://www.instagram.com/garabatoficial.ve?igsh=MXV2YWY0ZDFyeGE5ag%3D%3D&utm_source=qr" target="_blank" className="flex items-center justify-center gap-1"><FaInstagram /> Instagram</a>
+          <a href="https://www.tiktok.com/@garabato.ve?_t=ZM-8w5Tti1ZHOw&_r=1" target="_blank" className="flex items-center justify-center gap-1"><FaTiktok /> Tiktok</a>
+          <a href="https://youtu.be/sbjfPB44N4o?feature=shared" target="_blank" className="flex items-center justify-center gap-1"><FaYoutube /> Youtube</a>
+          </div>
+        </article>
+        <article className="flex flex-col gap-5 lg:items-start items-center p-10 lg:p-16 lg:justify-start justify-center h-[50vh] lg:w-1/2 w-full active-color-bg lg:rounded-tl-[64px]">
+          <h2 className="tertiary-color lg:text-4xl text-xl">Visita nuestra galería</h2>
+          <Button text={"Ver Galería"} handleClick={() => router.push("/galeria")}></Button>
+        </article>
+      </section>
+      <footer className="primary-color-bg rounded-t-[40px] tertiary-color items-center justify-center flex h-[50vh] lg:h-[35vh] -mt-10 sticky z-10 flex-col gap-10 lg:rounded-t-[64px] lg:-mt-16">
+        <a className="flex items-center gap-1 font-bold underline"><FaLocationDot></FaLocationDot> Ubicación</a>
+        <p className="capitalize font-light text-sm">Garabato todos los derechos reservados ©</p>
       </footer>
+      <ScrollButton handleScroll={handleScroll}></ScrollButton>
     </div>
   );
 }
