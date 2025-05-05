@@ -131,7 +131,7 @@ export default function Home() {
           <div className={"relative aspect-video"}>
             <iframe
               loading="lazy" title="Gumlet video player"
-              src="https://play.gumlet.io/embed/6817f83dc4342f3361622e39"
+              src="https://play.gumlet.io/embed/6819424a43ef9457178fce54"
               className={"border-0 absolute top-0 left-0 h-full w-full"}
               allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
             </iframe>
