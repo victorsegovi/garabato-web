@@ -166,13 +166,13 @@ export default function Home() {
 
                         <a href="#"
                             className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                            <img src="/garabato-team.jpg" loading="lazy" alt="Team Garabato" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            <img src="/ganado.jpeg" loading="lazy" alt="Ganado" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                             <div
                                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                             </div>
 
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Team Garabato</span>
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Ganado</span>
                         </a>
 
                         <a href="#"
@@ -199,35 +199,35 @@ export default function Home() {
 
                         <a href="#"
                             className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/irmen-pina.jpg" loading="lazy" alt="Irmen Piña" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            <img src="/agua.jpeg" loading="lazy" alt="Grifo" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                             <div
                                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                             </div>
 
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Grifo</span>
                         </a>
 
                         <a href="#"
                             className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/jhonny-sanchez.jpg" loading="lazy" alt="Jhonny Sanchez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            <img src="/grifo.jpeg" loading="lazy" alt="Grifo" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                             <div
                                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                             </div>
 
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Grifo</span>
                         </a>
 
                         <a href="#"
                             className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/juan-carlos-guevara.jpg" loading="lazy" alt="Juan Carlos Guevara" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            <img src="/casa.jpeg" loading="lazy" alt="Casa" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                             <div
                                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                             </div>
 
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Casa</span>
                         </a>
 
                         <a href="#"
@@ -294,6 +294,38 @@ export default function Home() {
                             </div>
 
                             <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                        </a>
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                            <img src="/patilla.jpeg" loading="lazy" alt="patilla" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Patilla</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                            <img src="/tendedero.jpeg" loading="lazy" alt="Tendedero" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tendedero</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                            <img src="/vacas.jpeg" loading="lazy" alt="Vacas" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Vacas</span>
                         </a>
                     </div>
                 </div>
