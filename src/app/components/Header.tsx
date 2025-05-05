@@ -19,7 +19,7 @@ export default function Header({ handleClick, isShown, isHome }: HeaderProps) {
     return (
         <header className={`${isHome ? "fixed" : "sticky"} top-0 z-50 w-full`}>
             <div className=" rounded-b-4xl tertiary-color-bg w-full flex p-10 primary-color items-center justify-between">
-                <img className="cursor-pointer w-1/3" src="/garabato-logo.svg" alt="Garabato Logo" onClick={() => {
+                <img className="cursor-pointer w-1/3 max-w-[200px]" src="/garabato-logo.svg" alt="Garabato Logo" onClick={() => {
                     if (isHome) {
                         window.scroll(0, 0)
                     } else {
@@ -32,7 +32,7 @@ export default function Header({ handleClick, isShown, isHome }: HeaderProps) {
             </div>
             <div className={`w-[80vw] md:w-[50vw] h-full transition-all duration-750 tertiary-color-bg rounded-l-4xl p-5 primary-color fixed top-0 flex flex-col justify-between ${isShown ? "right-0" : "-right-full"}`}>
                 <IoCloseOutline onClick={handleClick} className="text-3xl cursor-pointer" />
-                <a onClick={() => router.push("/galeria")} className=" cursor-pointer underline">Galería</a>
+                <a onClick={() => router.push("/garabato")} className=" cursor-pointer underline">¿Qué es Garabato?</a>
                 <hr className="w-1/2 primary-color"></hr>
                 <div className="flex flex-col gap-2 items-start justify-center">
                     <h5 className="font-bold text-xl">Más Información</h5>

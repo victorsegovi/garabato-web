@@ -57,9 +57,8 @@ export default function Home() {
   return (
     <div>
       <Header isShown={isShown} handleClick={handleClick} isHome={true}></Header>
-      <section style={{ backgroundImage: "url(garabato-paisaje.jpg)" }} className="bg-cover bg-no-repeat bg-center h-screen m-w-screen relative flex flex-col p-10 items-center justify-center gap-4" id="hero-section">
+      <section style={{ backgroundImage: "url(garabato-paisaje.jpg)" }} className="bg-cover bg-no-repeat bg-center h-[70vh] m-w-screen relative flex flex-col px-10 py-20 items-center justify-end gap-4" id="hero-section">
         <div className="w-full h-full bg-linear-180 from-[#8E9B6D] to-[#1F3F27] absolute top-0 left-0 opacity-60"></div>
-        <h1 className="secondary-color z-10 text-center mt-24">Garabato</h1>
         <p className="secondary-color z-10 text-center lg:w-1/2">Para el ser humano casi siempre es interesante
           conocer historias nuevas y más si se trata de temas
           que no se exponen con frecuencia.<br></br><br></br>
@@ -144,77 +143,161 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section id="description" className="flex flex-col gap-10 p-10 text-justify items-center">
-        <article className="flex flex-col gap-5 max-w-[500px]">
-          <h2 className="text-4xl">¿Qué es Garabato?</h2>
-          <p>Garabato, es un asentamiento campesino ubicado en
-            el estado Cojedes con aproximadamente 300
-            habitantes, que, a pesar de sus carencias
-            tecnológicas, asistenciales, culturales, educativas, así
-            como de medios de comunicación que permitan
-            conocer de sus aspectos característicos como la falta
-            de alimentos o desarrollo y habilidades de
-            sobrevivencia a temprana edad, subsisten en un
-            precario espacio geográfico, bajo el cobijo de la
-            solidaridad, el respeto, la tolerancia, la bondad, el
-            amor y la equidad entre sus habitantes.</p>
-        </article>
-        <article className="flex flex-col gap-5 max-w-[500px]">
-          <h2>Ejemplo de resiliencia</h2>
-          <p>Es un lugar único que cuenta con personas nobles que,
-            aunque viven con distintas carencias, tienden su mano
-            amiga a quien más lo necesita, además de poseer
-            numerosas riquezas naturales como su flora y fauna.
+      <div className="min-h-screen py-6 sm:py-8 lg:py-12">
+                <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+                    <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+                        <div className="flex items-center gap-12">
+                            <h1 className="text-2xl font-bold lg:text-3xl">Galería</h1>
+                        </div>
+                    </div>
 
-            Cada habitante se caracteriza por su esfuerzo y aplomo
-            de salir adelante, desde levantarse muy temprano para buscar los alimentos del día, supervisar sus cultivos, la cría de animales, entre otras actividades que realizan para su
-            subsistencia; todo ello sin perder la esperanza por
-            llegar a alcanzar un futuro donde sus sueños y
-            aspiraciones logren verse materializados.</p>
-        </article>
-        <article className="flex flex-col gap-5 max-w-[500px]">
-          <h2>El problema</h2>
-          <p>La Encuesta de Condiciones de Vida (ENCOVI) es un
-            estudio que arrojó un resultado en el que el 51,9% de la
-            población venezolana estaba en condiciones de
-            pobreza el año pasado, una cifra ligeramente mayor en
-            comparación con 2022, cuando la pobreza
-            multidimensional, que incluye el nivel de ingresos y
-            acceso a servicios públicos como educación y salud,
-            fue del 50,5%. La mitad de los hogares no percibe
-            ingresos suficientes para cubrir la Canasta Alimentaria,
-            lo que los pone en una situación de pobreza extrema,
-            según los resultados de ENCOVI.<br></br><br></br>
+                    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
 
-            El Instituto Nacional de Estadística, calculó que hay
-            286.000 hogares pobres en las zonas rurales, de los
-            cuales 172.000 están en situación de pobreza extrema.
-            Los segmentos más pobres de la población rural
-            comprenden comunidades indígenas y de origen
-            africano, habitantes de territorios semiáridos y familias
-            sin tierra, con jefaturas de hogar a cargo de mujeres.
-            Se trata en todos los casos de grupos meta a los que
-            van dirigidos los proyectos del Fondo Internacional de
-            Desarrollo Agrícola (FIDA).<br></br><br></br>
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                            <img src="/cocina.jpeg" loading="lazy" alt="Cocina a Leña" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
-            Es importante destacar que la pobreza en Venezuela
-            presenta un marcado carácter rural. Más del 50% de la
-            población rural vive en condiciones de pobreza, en
-            comparación con el 40% de las zonas urbanas. Esta
-            disparidad se explica en gran medida por la
-            dependencia de la agricultura de subsistencia, una
-            actividad económica altamente vulnerable a factores
-            externos como las fluctuaciones de los precios de los
-            productos agrícolas y la falta de acceso a tecnologías
-            modernas.<br></br><br></br>
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
 
-            Garabato, al ser una comunidad rural, comparte estas
-            características. La ausencia de otras fuentes de ingreso
-            más allá de la agricultura limita las oportunidades de
-            desarrollo para sus habitantes y los hace más
-            propensos a caer en la pobreza en tiempos de crisis.</p>
-        </article>
-      </section>
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Cocina a Leña</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                            <img src="/garabato-team.jpg" loading="lazy" alt="Team Garabato" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Team Garabato</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-90">
+                            <img src="/garabato-paisaje.jpg" loading="lazy" alt="Paisaje Garabato" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Paisaje</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-90">
+                            <img src="/garabato.jpg" loading="lazy" alt="Garabato" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Garabato</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                            <img src="/irmen-pina.jpg" loading="lazy" alt="Irmen Piña" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                            <img src="/jhonny-sanchez.jpg" loading="lazy" alt="Jhonny Sanchez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                            <img src="/juan-carlos-guevara.jpg" loading="lazy" alt="Juan Carlos Guevara" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                            <img src="/lishavis-caro.jpg" loading="lazy" alt="Lishavis Caro" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                            <img src="/luis-borges.jpg" loading="lazy" alt="Luis Borges" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-90">
+                            <img src="/maria-torrealba.jpg" loading="lazy" alt="María Torrealba" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-90">
+                            <img src="/luis-herrera.jpg" loading="lazy" alt="Luis Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                            <img src="/blanca-manzanilla.jpg" loading="lazy" alt="Blanca Manzanilla" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                        </a>
+
+                        <a href="#"
+                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                            <img src="/cecilia-vasquez.jpg" loading="lazy" alt="Cecilia Vasquez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
       <section id="others" className="w-full flex flex-wrap sticky z-10">
         <article className="flex flex-col gap-5 lg:items-start items-center p-10 lg:p-16 lg:justify-start justify-center h-[50vh] lg:w-1/2 w-full secondary-color-bg lg:rounded-tr-[64px]">
           <h2 className="active-color lg:text-4xl text-xl">Visita nuestras redes sociales</h2>
@@ -225,8 +308,8 @@ export default function Home() {
           </div>
         </article>
         <article className="flex flex-col gap-5 lg:items-start items-center p-10 lg:p-16 lg:justify-start justify-center h-[50vh] lg:w-1/2 w-full active-color-bg lg:rounded-tl-[64px]">
-          <h2 className="tertiary-color lg:text-4xl text-xl">Visita nuestra galería</h2>
-          <Button text={"Ver Galería"} handleClick={() => router.push("/galeria")}></Button>
+          <h2 className="tertiary-color lg:text-4xl text-xl">¿Qué es Garabato?</h2>
+          <Button text={"¡Quiero Saber Más!"} handleClick={() => router.push("/garabato")}></Button>
         </article>
       </section>
       <footer className="primary-color-bg rounded-t-[40px] tertiary-color items-center justify-center flex h-[50vh] lg:h-[35vh] -mt-10 sticky z-10 flex-col gap-10 lg:rounded-t-[64px] lg:-mt-16">
