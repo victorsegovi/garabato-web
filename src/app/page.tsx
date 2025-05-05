@@ -232,7 +232,7 @@ export default function Home() {
 
                         <a href="#"
                             className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/lishavis-caro.jpg" loading="lazy" alt="Lishavis Caro" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            <img src="/lishavis-caro.jpeg" loading="lazy" alt="Lishavis Caro" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                             <div
                                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -243,7 +243,7 @@ export default function Home() {
 
                         <a href="#"
                             className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                            <img src="/luis-borges.jpg" loading="lazy" alt="Luis Borges" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            <img src="/luis-borges.jpeg" loading="lazy" alt="Luis Borges" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                             <div
                                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -254,7 +254,7 @@ export default function Home() {
 
                         <a href="#"
                             className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-90">
-                            <img src="/maria-torrealba.jpg" loading="lazy" alt="María Torrealba" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            <img src="/maria-torrealba.jpeg" loading="lazy" alt="María Torrealba" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                             <div
                                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -265,7 +265,7 @@ export default function Home() {
 
                         <a href="#"
                             className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-90">
-                            <img src="/luis-herrera.jpg" loading="lazy" alt="Luis Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            <img src="/luis-herrera.jpeg" loading="lazy" alt="Luis Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                             <div
                                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -276,7 +276,7 @@ export default function Home() {
 
                         <a href="#"
                             className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/blanca-manzanilla.jpg" loading="lazy" alt="Blanca Manzanilla" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            <img src="/blanca-manzanilla.jpeg" loading="lazy" alt="Blanca Manzanilla" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                             <div
                                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -287,7 +287,7 @@ export default function Home() {
 
                         <a href="#"
                             className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                            <img src="/cecilia-vasquez.jpg" loading="lazy" alt="Cecilia Vasquez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            <img src="/cecilia-vasquez.jpeg" loading="lazy" alt="Cecilia Vasquez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                             <div
                                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
