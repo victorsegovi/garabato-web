@@ -68,8 +68,8 @@ export default function Home() {
           tradiciones y desafíos es algo que despierta la
           curiosidad en el espectador.</p>
       </section>
-      <section id="description" className="flex flex-col gap-10 p-10 text-justify">
-        <article className="flex flex-col gap-5">
+      <section id="description" className="flex flex-col gap-10 p-10 text-justify items-center">
+        <article className="flex flex-col gap-5 max-w-[500px]">
           <h2 className="text-4xl">¿Qué es Garabato?</h2>
           <p>Garabato, es un asentamiento campesino ubicado en
             el estado Cojedes con aproximadamente 300
@@ -83,7 +83,7 @@ export default function Home() {
             solidaridad, el respeto, la tolerancia, la bondad, el
             amor y la equidad entre sus habitantes.</p>
         </article>
-        <article className="flex flex-col gap-5">
+        <article className="flex flex-col gap-5 max-w-[500px]">
           <h2>Ejemplo de resiliencia</h2>
           <p>Es un lugar único que cuenta con personas nobles que,
             aunque viven con distintas carencias, tienden su mano
@@ -96,7 +96,7 @@ export default function Home() {
             llegar a alcanzar un futuro donde sus sueños y
             aspiraciones logren verse materializados.</p>
         </article>
-        <article className="flex flex-col gap-5">
+        <article className="flex flex-col gap-5 max-w-[500px]">
           <h2>El problema</h2>
           <p>La Encuesta de Condiciones de Vida (ENCOVI) es un
             estudio que arrojó un resultado en el que el 51,9% de la
