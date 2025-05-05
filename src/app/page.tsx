@@ -15,8 +15,8 @@ export default function Home() {
 
   const scrollStops = [
     "hero-section",
-    "description",
     "documentary",
+    "description",
     "others"
   ]
 
