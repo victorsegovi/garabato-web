@@ -333,14 +333,6 @@ export default function Home() {
                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
               </div>
             </a>
-            <a href="#"
-              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-              <img src="/ganado-2.JPEG" loading="lazy" alt="Ganado" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-              <div
-                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-              </div>
-            </a>
 
             <a href="#"
               className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
@@ -375,15 +367,6 @@ export default function Home() {
                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
               </div>
 
-            </a>
-
-            <a href="#"
-              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-              <img src="/paisaje-3.PNG" loading="lazy" alt="Paisaje" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-              <div
-                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-              </div>
             </a>
           </div>
         </div>
