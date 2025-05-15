@@ -16,6 +16,7 @@ export default function Home() {
   const scrollStops = [
     "hero-section",
     "documentary",
+    "about-us",
     "description",
     "others"
   ]
@@ -57,15 +58,11 @@ export default function Home() {
   return (
     <div>
       <Header isShown={isShown} handleClick={handleClick} isHome={true}></Header>
-      <section style={{ backgroundImage: "url(garabato-paisaje.jpg)" }} className="bg-cover bg-no-repeat bg-center h-[80vh] m-w-screen relative flex flex-col px-10 py-15 items-center justify-end gap-4" id="hero-section">
+      <section style={{ backgroundImage: "url(paisaje.JPEG)" }} className="bg-cover bg-no-repeat bg-center h-[80vh] m-w-screen relative flex flex-col px-10 py-15 items-center justify-end gap-4" id="hero-section">
         <div className="w-full h-full bg-linear-180 from-[#8E9B6D] to-[#1F3F27] absolute top-0 left-0 opacity-60"></div>
-        <p className="secondary-color z-10 text-center lg:w-1/2 lg:text-xl font-bold">Para el ser humano casi siempre es interesante
-          conocer historias nuevas y más si se trata de temas
-          que no se exponen con frecuencia.<br></br><br></br>
-          Descubrir localidades poco conocidas y adentrarse
-          en su cultura, población, idiosincrasia, costumbres,
-          tradiciones y desafíos es algo que despierta la
-          curiosidad en el espectador.</p>
+        <p className="secondary-color z-10 text-center lg:w-1/2 lg:text-xl font-bold">En Garabato, un asentamiento campesino ubicado en el estado Cojedes, Venezuela, la vida transcurre sin lo que muchos consideran indispensable: electricidad, gas, suministro de agua, o servicio de telefonía fija.<br></br><br></br>
+
+          Cada amanecer en este lugar es un desafío, cada tarea cotidiana se convierte en un esfuerzo constante. En Garabato, la ausencia de comodidades no solo es una lucha diaria, sino también un testimonio de resiliencia y unión frente a la adversidad.</p>
       </section>
       <section id="documentary" style={{ backgroundImage: "url(bg-logo.jpg)" }} className="bg-center bg-no-repeat bg-cover m-w-screen min-h-screen secondary-color flex flex-col items-center justify-center p-10 gap-10 text-justify">
         <div className="w-full max-w-[500px] flex flex-col gap-5">
@@ -139,197 +136,251 @@ export default function Home() {
         </div>
         <div className="w-full max-w-[500px] flex flex-col gap-5">
           <p>
-          Garabato no solo es un asentamiento campesino; esta comunidad refleja la lucha y la esperanza en medio de las dificultades. Cada amanecer trae consigo el eco del arduo trabajo de sus habitantes, quienes, a pesar de las limitaciones, continúan apostando a este lugar. La vida en Garabato es un testimonio del espíritu humano que se niega a rendirse, donde la solidaridad y el esfuerzo colectivo son el motor que impulsa a esta comunidad hacia un futuro mejor. En un mundo que ignora las voces de las comunidades rurales, Garabato recuerda que detrás de cada cifra hay historias de valentía y dignidad que merecen ser escuchadas y valoradas.
+            Garabato no solo es un asentamiento campesino; esta comunidad refleja la lucha y la esperanza en medio de las dificultades. Cada amanecer trae consigo el eco del arduo trabajo de sus habitantes, quienes, a pesar de las limitaciones, continúan apostando a este lugar. La vida en Garabato es un testimonio del espíritu humano que se niega a rendirse, donde la solidaridad y el esfuerzo colectivo son el motor que impulsa a esta comunidad hacia un futuro mejor. En un mundo que ignora las voces de las comunidades rurales, Garabato recuerda que detrás de cada cifra hay historias de valentía y dignidad que merecen ser escuchadas y valoradas.
           </p>
         </div>
       </section>
+      <section id="about-us" className="max-w-screen min-h-screen flex flex-col justify-center items-center p-10 gap-5">
+        <div className="flex flex-col gap-5 max-w-[500px]">
+          <h2>¿Quiénes Somos?</h2>
+          <p>Garabato: Historias Olvidadas es un reportaje multimedia que se adentra en la vida cotidiana de los habitantes de esta comunidad rural, donde exponemos la realidad actual que enfrentan, y los desafíos significativos como la escasez de alimentos, el acceso limitado a la educación y la falta de infraestructura tecnológica.<br></br><br></br>
+
+            Ofrecemos una experiencia inmersiva, emocional y reveladora sobre la vida en los asentamientos campesinos de Venezuela.
+
+            En cuatro capítulos de ocho minutos cada uno, podrás entender desde enfoques distintos, la razón por la que a pesar de estar alejados de la civilización, también deben ser tomados en cuenta para mejorar sus condiciones de vida.</p>
+          <div className="w-[80vw] max-w-[500px] max-h-[500px] overflow-hidden rounded-3xl"><img src={"garabato-team.jpg"} /></div>
+        </div>
+      </section>
       <div className="min-h-screen py-6 sm:py-8 lg:py-12">
-                <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-                    <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
-                        <div className="flex items-center gap-12">
-                            <h1 className="text-2xl font-bold lg:text-3xl">Garabato en Imágenes</h1>
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/cocina.jpeg" loading="lazy" alt="Cocina a Leña" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Cocina a Leña</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                            <img src="/ganado.jpeg" loading="lazy" alt="Ganado" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Ganado</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-90">
-                            <img src="/garabato-paisaje.jpg" loading="lazy" alt="Paisaje Garabato" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Paisaje</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-90">
-                            <img src="/garabato.jpg" loading="lazy" alt="Garabato" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Garabato</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/agua.jpeg" loading="lazy" alt="Grifo" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Aljibe</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/grifo.jpeg" loading="lazy" alt="Grifo" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Bomba de Agua</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/casa.jpeg" loading="lazy" alt="Casa" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Casa</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/lishavis-caro.jpeg" loading="lazy" alt="Lishavis Caro" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                            <img src="/luis-borges.jpeg" loading="lazy" alt="Luis Borges" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-90">
-                            <img src="/maria-torrealba.jpeg" loading="lazy" alt="María Torrealba" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-90">
-                            <img src="/luis-herrera.jpeg" loading="lazy" alt="Luis Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/blanca-manzanilla.jpeg" loading="lazy" alt="Blanca Manzanilla" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                            <img src="/cecilia-vasquez.jpeg" loading="lazy" alt="Cecilia Vasquez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
-                        </a>
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/patilla.jpeg" loading="lazy" alt="patilla" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Patilla</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/tendedero.jpeg" loading="lazy" alt="Tendedero" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tendedero</span>
-                        </a>
-
-                        <a href="#"
-                            className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                            <img src="/vacas.jpeg" loading="lazy" alt="Vacas" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                            <div
-                                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                            </div>
-
-                            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Vacas</span>
-                        </a>
-                    </div>
-                </div>
+        <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+            <div className="flex items-center gap-12">
+              <h1 className="text-2xl font-bold lg:text-3xl">Garabato en Imágenes</h1>
             </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="/cocina.jpeg" loading="lazy" alt="Cocina a Leña" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Cocina a Leña</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+              <img src="/ganado.jpeg" loading="lazy" alt="Ganado" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Ganado</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-90">
+              <img src="/garabato-paisaje.jpg" loading="lazy" alt="Paisaje Garabato" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Paisaje</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-90">
+              <img src="/garabato.jpg" loading="lazy" alt="Garabato" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Garabato</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="/agua.jpeg" loading="lazy" alt="Grifo" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Aljibe</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="/grifo.jpeg" loading="lazy" alt="Grifo" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Bomba de Agua</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="/casa.jpeg" loading="lazy" alt="Casa" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Casa</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="/lishavis-caro.jpeg" loading="lazy" alt="Lishavis Caro" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+              <img src="/luis-borges.jpeg" loading="lazy" alt="Luis Borges" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-90">
+              <img src="/maria-torrealba.jpeg" loading="lazy" alt="María Torrealba" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-90">
+              <img src="/luis-herrera.jpeg" loading="lazy" alt="Luis Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="/blanca-manzanilla.jpeg" loading="lazy" alt="Blanca Manzanilla" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+              <img src="/cecilia-vasquez.jpeg" loading="lazy" alt="Cecilia Vasquez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Habitante de Garabato</span>
+            </a>
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="/patilla.jpeg" loading="lazy" alt="patilla" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Patilla</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="/tendedero.jpeg" loading="lazy" alt="Tendedero" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tendedero</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="/vacas.jpeg" loading="lazy" alt="Vacas" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Vacas</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="/toro.JPEG" loading="lazy" alt="Toro" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Ganado</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+              <img src="/paisaje-2.PNG" loading="lazy" alt="Paisaje" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Paisaje</span>
+            </a>
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+              <img src="/ganado-2.JPEG" loading="lazy" alt="Ganado" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Ganado</span>
+            </a>
+
+            <a href="#"
+              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="/paisaje.JPEG" loading="lazy" alt="Paisaje" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tractor</span>
+            </a>
+          </div>
+        </div>
+      </div>
       <section id="others" className="w-full flex flex-wrap sticky z-10">
         <article className="flex flex-col gap-5 lg:items-start items-center p-10 lg:p-16 lg:justify-start justify-center h-[50vh] lg:w-1/2 w-full secondary-color-bg lg:rounded-tr-[64px]">
           <h2 className="active-color lg:text-4xl text-xl">Visita nuestras redes sociales</h2>
