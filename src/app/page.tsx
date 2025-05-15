@@ -65,7 +65,7 @@ export default function Home() {
           Cada amanecer en este lugar es un desafío, cada tarea cotidiana se convierte en un esfuerzo constante. En Garabato, la ausencia de comodidades no solo es una lucha diaria, sino también un testimonio de resiliencia y unión frente a la adversidad.</p>
       </section>
       <section id="documentary" style={{ backgroundImage: "url(bg-logo.jpg)" }} className="bg-center bg-no-repeat bg-cover m-w-screen min-h-screen secondary-color flex flex-col items-center justify-center p-10 gap-10 text-justify">
-        <div className="w-full max-w-[500px] flex flex-col gap-5">
+        <div className="w-full max-w-[800px] flex flex-col gap-5">
           <p>Las comunidades rurales enfrentan desafíos significativos que afectan su desarrollo y bienestar. A menudo, estas dificultades se ven acentuadas por la falta de acceso a servicios básicos y recursos, lo que limita su capacidad para prosperar. La pobreza, la precariedad, la marginalidad económica y social continúan, hoy por hoy, prevaleciendo en muchas de las zonas rurales de los países de la región, entre ellos, Venezuela.<br></br><br></br>
 
             Aun siendo Venezuela uno de los países más urbanizados de América Latina, la pobreza es un fenómeno predominantemente rural. Según los indicadores de la pobreza, ampliamente reconocidos del Instituto Nacional de Estadística, en cifras absolutas, se ha calculado que hay 286.000 hogares pobres en las zonas rurales, de los cuales 172.000 en situación de pobreza extrema.<br></br><br></br>
@@ -81,7 +81,7 @@ export default function Home() {
             </iframe>
           </div>
         </div>
-        <div className="w-full max-w-[500px] flex flex-col gap-5">
+        <div className="w-full max-w-[800px] flex flex-col gap-5">
           Esta comunidad cuenta con aproximadamente 300 habitantes quienes se caracterizan por ser personas valientes, trabajadoras, resilientes, pero sobre todo, nobles y generosas. Su rutina diaria comienza desde muy temprano al realizar labores agrícolas y ganaderas para su propia subsistencia, como ordeñar y sembrar. A pesar de que en otras zonas rurales, los roles de las mujeres y hombres pueden estar bastante divididos, en Garabato no, puesto que la mujer garabateña también se integra en todo lo que refiere a las tareas del campo, esto las hace más independientes.<br></br><br></br>
 
           Según cifras de la ONU, las mujeres en zonas rurales conforman un 43 % de la mano de obra agrícola. La vicepresidente del Foro Rural de Venezuela, Maribel Guédez, señaló en una entrevista reciente que la mujer venezolana representa el 48 % de la mano de obra en el reducido campo productivo y que la sociedad venezolana no está consciente de la importancia de este dato cuantitativo de impacto cualitativo.<br></br><br></br>
@@ -101,7 +101,7 @@ export default function Home() {
             </iframe>
           </div>
         </div>
-        <div className="w-full max-w-[500px] flex flex-col gap-5">
+        <div className="w-full max-w-[800px] flex flex-col gap-5">
           <p>
             Uno de los elementos que afectan las zonas rurales del país es el desmejoramiento o en algunos casos, la inexistencia de servicios públicos. En el caso de Garabato, no poseen ningún tipo de servicios públicos, es por eso que, deben realizar grandes esfuerzos para poder obtener por sus medios todos estos recursos que son de suma importancia para el ser humano. Bajo un sol inclemente y altas temperaturas, semanalmente deben buscar leña para poder cocinar y a través de un proceso de bombeo manual extraer agua de los suelos para almacenarla.<br></br><br></br>
 
@@ -117,7 +117,7 @@ export default function Home() {
             </iframe>
           </div>
         </div>
-        <div className="w-full max-w-[500px] flex flex-col gap-5">
+        <div className="w-full max-w-[800px] flex flex-col gap-5">
           <p>
             Por otro lado, el sistema educativo en Garabato enfrenta múltiples debilidades. Los niños deben recorrer a diario un trayecto de aproximadamente dos horas para acudir a sus actividades escolares, dado que solo existen dos escuelas y  se encuentran distantes de sus viviendas. La infraestructura física de estos centros educativos están en mal estado y el personal docente resulta insuficiente por lo que el pensum de estudio no se cumple en su totalidad.<br></br><br></br>
 
@@ -134,21 +134,21 @@ export default function Home() {
             </iframe>
           </div>
         </div>
-        <div className="w-full max-w-[500px] flex flex-col gap-5">
+        <div className="w-full max-w-[800px] flex flex-col gap-5">
           <p>
             Garabato no solo es un asentamiento campesino; esta comunidad refleja la lucha y la esperanza en medio de las dificultades. Cada amanecer trae consigo el eco del arduo trabajo de sus habitantes, quienes, a pesar de las limitaciones, continúan apostando a este lugar. La vida en Garabato es un testimonio del espíritu humano que se niega a rendirse, donde la solidaridad y el esfuerzo colectivo son el motor que impulsa a esta comunidad hacia un futuro mejor. En un mundo que ignora las voces de las comunidades rurales, Garabato recuerda que detrás de cada cifra hay historias de valentía y dignidad que merecen ser escuchadas y valoradas.
           </p>
         </div>
       </section>
       <section id="about-us" className="max-w-screen min-h-screen flex flex-col justify-center items-center p-10 gap-5">
-        <div className="flex flex-col gap-5 max-w-[500px]">
+        <div className="flex flex-col gap-5 max-w-[800px]">
           <h2>¿Quiénes Somos?</h2>
-          <p>Garabato: Historias Olvidadas es un reportaje multimedia que se adentra en la vida cotidiana de los habitantes de esta comunidad rural, donde exponemos la realidad actual que enfrentan, y los desafíos significativos como la escasez de alimentos, el acceso limitado a la educación y la falta de infraestructura tecnológica.<br></br><br></br>
+          <p className="text-justify">Garabato: Historias Olvidadas es un reportaje multimedia que se adentra en la vida cotidiana de los habitantes de esta comunidad rural, donde exponemos la realidad actual que enfrentan, y los desafíos significativos como la escasez de alimentos, el acceso limitado a la educación y la falta de infraestructura tecnológica.<br></br><br></br>
 
             Ofrecemos una experiencia inmersiva, emocional y reveladora sobre la vida en los asentamientos campesinos de Venezuela.
 
             En cuatro capítulos de ocho minutos cada uno, podrás entender desde enfoques distintos, la razón por la que a pesar de estar alejados de la civilización, también deben ser tomados en cuenta para mejorar sus condiciones de vida.</p>
-          <div className="w-[80vw] max-w-[500px] max-h-[500px] overflow-hidden rounded-3xl"><img src={"garabato-team.jpg"} /></div>
+          <div className="w-[80vw] max-w-[800px] max-h-[800px] overflow-hidden rounded-3xl"><img src={"garabato-team.jpg"} /></div>
         </div>
       </section>
       <div className="min-h-screen py-6 sm:py-8 lg:py-12">
